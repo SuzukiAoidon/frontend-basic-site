@@ -74,7 +74,6 @@ img {
   justify-content: center;
   align-items: center;
   position: relative;
-  margin-top: 80px;
 }
 
 .hero::after {
@@ -198,12 +197,13 @@ img {
     gap: 40px;
   }
   .about-container {
-    /* gap: 40px; */
+    flex-direction: column;
   }
   .about-texts {
     /* width: 221px; */
     height: 36px;
     padding: 6px 0px;
+    font-size: 24px;
   }
   .about-content-copy {
     width: 350px;
@@ -214,4 +214,64 @@ img {
   .about-content-img {
     display: none;
   }
+}
+
+/* courses */
+.courses {
+  background-color: var(--color-background-navy);
+  padding: 80px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.courses-container {
+  display: flex;
+  padding: 0px 40px;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.courses-texts {
+  font-family: var(--font-family-heading);
+  color: var(--color-white);
+  width: 108px;
+  height: 48px;
+  font-size: 32px;
+  letter-spacing: 0.64px;
+}
+
+.courses-button {
+  background: var(--color-accent-red);
+  box-shadow: 4px 4px 0px 0px var(--color-accent-yellow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 800px;
+  height: 60px;
+  padding: 10px 40px;
+  gap: 10px;
+}
+.courses-button-frame {
+  width: 670px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.courses-button-copy {
+  font-family: var(--font-family-body);
+  color: var(--color-white);
+  font-size: 20px;
+}
+
+.courses-button-arrow {
+  width: 40px;
+  height: 40px;
+}
+
+@media (max-width: 750px) {
 }
