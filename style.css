@@ -242,6 +242,72 @@ img {
   font-size: 32px;
   letter-spacing: 0.64px;
 }
+.courses-cards {
+  display: flex;
+  width: 800px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+.card {
+  display: flex;
+  height: 150px;
+  align-items: flex-start;
+  background: var(--color-accent-yellow);
+  box-shadow: 4px 4px 0px 0px var(--color-accent-red);
+}
+.card-picture {
+  display: flex;
+  width: 250px;
+  height: 150px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+.card-picture::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-hero-overlay);
+}
+.card-img {
+  width: 100%;
+  height: 100%;
+}
+.card-img-copy {
+  position: absolute;
+  color: var(--color-white);
+  font-family: var(--font-family-heading);
+  font-size: 32px;
+  letter-spacing: 1.6px;
+  z-index: 1;
+}
+.card-body {
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+  flex: 1 0 0;
+}
+.card-texts {
+  margin: 0;
+  color: var(--color-black);
+  font-family: var(--font-family-body);
+  font-size: 16px;
+}
+.card-frame {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.card-frame-texts {
+  color: var(--color-accent-red);
+  font-family: var(--font-family-body);
+  font-size: 16px;
+}
 
 .courses-button {
   background: var(--color-accent-red);
@@ -261,13 +327,11 @@ img {
   align-items: flex-start;
   gap: 10px;
 }
-
 .courses-button-copy {
   font-family: var(--font-family-body);
   color: var(--color-white);
   font-size: 20px;
 }
-
 .courses-button-arrow {
   width: 40px;
   height: 40px;
