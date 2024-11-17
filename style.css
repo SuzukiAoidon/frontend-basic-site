@@ -26,6 +26,7 @@
 
 body {
   margin: 0;
+  padding: 0;
   font-family: var(--font-family-body);
 }
 
@@ -134,206 +135,54 @@ img {
 
 /* about */
 .about {
-  margin: 0;
-  height: 428px;
-  background-color: var(--color-background-black);
   display: flex;
+  padding: 80px 0px;
   flex-direction: column;
   align-items: center;
-  padding: 80px 0px;
   gap: 20px;
+  align-self: stretch;
+  background: var(--color-background-black);
 }
-
-.about-container {
-  padding: 0px 40px;
+.about-wrapper {
   display: flex;
+  padding: 0px 40px;
   flex-direction: column;
   align-items: center;
   gap: 40px;
 }
-
-.about-texts {
-  font-family: var(--font-family-heading);
-  /* width: 309px; */
-  height: 48px;
-  margin: 0;
+.about-title {
   color: var(--color-white);
+  font-family: var(--font-family-heading);
   font-size: 32px;
-  letter-spacing: 0.64px;
   line-height: normal;
+  letter-spacing: 0.64px;
+  margin: 0;
 }
-.color-accent1 {
+.about-red {
   color: var(--color-accent-red);
 }
-
-.color-accent2 {
+.about-yellow {
   color: var(--color-accent-yellow);
 }
-
-.about-content {
+.about-container {
   display: flex;
   width: 800px;
-  height: 180px;
   justify-content: center;
   align-items: center;
   gap: 20px;
 }
-.about-content-copy {
+.about-texts {
   color: var(--color-white);
-  width: 460px;
-  height: 161px;
+  font-family: var(--font-family-body);
   font-size: 16px;
+  line-height: normal;
+  margin: 0;
 }
-
-.about-content-img {
+.about-img {
+  display: flex;
   width: 320px;
   height: 180px;
-}
-
-@media (max-width: 750px) {
-  .about {
-    height: 363px;
-    padding: 40px 20px;
-    gap: 40px;
-  }
-  .about-container {
-    flex-direction: column;
-  }
-  .about-texts {
-    /* width: 221px; */
-    height: 36px;
-    padding: 6px 0px;
-    font-size: 24px;
-  }
-  .about-content-copy {
-    width: 350px;
-    height: 207px;
-    font-size: 16px;
-  }
-
-  .about-content-img {
-    display: none;
-  }
+  flex-shrink: 0;
 }
 
 /* courses */
-.courses {
-  background-color: var(--color-background-navy);
-  padding: 80px 0px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 30px;
-}
-
-.courses-container {
-  display: flex;
-  padding: 0px 40px;
-  flex-direction: column;
-  align-items: center;
-  gap: 40px;
-}
-
-.courses-texts {
-  font-family: var(--font-family-heading);
-  color: var(--color-white);
-  width: 108px;
-  height: 48px;
-  font-size: 32px;
-  letter-spacing: 0.64px;
-}
-.courses-cards {
-  display: flex;
-  width: 800px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 20px;
-}
-.card {
-  display: flex;
-  height: 150px;
-  align-items: flex-start;
-  background: var(--color-accent-yellow);
-  box-shadow: 4px 4px 0px 0px var(--color-accent-red);
-  text-decoration: none;
-}
-.card-picture {
-  display: flex;
-  width: 250px;
-  height: 150px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  position: relative;
-}
-.card-picture::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: var(--color-hero-overlay);
-}
-.card-img {
-  width: 100%;
-  height: 100%;
-}
-.card-img-copy {
-  position: absolute;
-  color: var(--color-white);
-  font-family: var(--font-family-heading);
-  font-size: 32px;
-  letter-spacing: 1.6px;
-  z-index: 1;
-}
-.card-body {
-  display: flex;
-  padding: 20px;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 10px;
-  flex: 1 0 0;
-}
-.card-texts {
-  margin: 0;
-  color: var(--color-black);
-  font-family: var(--font-family-body);
-  font-size: 16px;
-}
-.card-frame-texts {
-  margin: 0px;
-  color: var(--color-accent-red);
-  font-family: var(--font-family-body);
-  font-size: 16px;
-  align-self: flex-end;
-}
-
-.courses-button {
-  background: var(--color-accent-red);
-  box-shadow: 4px 4px 0px 0px var(--color-accent-yellow);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 800px;
-  height: 60px;
-  padding: 10px 40px;
-  gap: 10px;
-}
-.courses-button-frame {
-  width: 670px;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 10px;
-}
-.courses-button-copy {
-  font-family: var(--font-family-body);
-  color: var(--color-white);
-  font-size: 20px;
-}
-.courses-button-arrow {
-  width: 40px;
-  height: 40px;
-}
-
-@media (max-width: 750px) {
-}
