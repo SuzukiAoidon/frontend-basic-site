@@ -291,10 +291,37 @@ img {
   margin: 0;
 }
 .courses-button {
+  display: flex;
+  width: 800px;
+  height: 60px;
+  padding: 10px 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background: var(--color-accent-red);
+  box-shadow: 4px 4px 0px 0px var(--color-accent-yellow);
+  text-decoration: none;
+  transition-duration: 0.3s;
+}
+.courses-button:hover {
+  background: var(--color-accent-yellow);
+  box-shadow: 12px 12px 2px 0px var(--color-button-hover-red);
 }
 .courses-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  flex: 1 0 0;
 }
 .courses-button-texts {
+  color: var(--color-white);
+  font-family: var(--font-family-body);
+  font-size: 20px;
+  line-height: normal;
 }
 .courses-arrow {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
 }
