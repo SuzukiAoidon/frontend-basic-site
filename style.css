@@ -185,6 +185,34 @@ img {
   flex-shrink: 0;
 }
 
+@media (max-width: 750px) {
+  .about {
+    padding: 40px 20px;
+    /* gap: 40px; */
+  }
+  .about-wrapper {
+    display: flex;
+    padding: 0;
+    gap: 40px;
+  }
+  .about-title {
+    font-size: 24px;
+    /* letter-spacing: 0.64px; */
+  }
+  .about-container {
+    width: 100%;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .about-texts {
+    flex: 1 0 0;
+  }
+  .about-img {
+    display: none;
+  }
+}
+
 /* courses */
 .courses {
   display: flex;
