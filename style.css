@@ -69,12 +69,13 @@ img {
 /* hero */
 .hero {
   background-image: url("./img/hero.png");
-  padding: 94px 40px;
   background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
+  margin-top: 80px;
+  padding: 94px 40px;
 }
 
 .hero::after {
