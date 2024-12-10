@@ -488,6 +488,7 @@ img {
 }
 .textarea-outer {
   height: 150px;
+  color: var(--color-black);
 }
 .form-button {
   border: none;
